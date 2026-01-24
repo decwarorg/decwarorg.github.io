@@ -11,6 +11,7 @@ import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
 
 import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout"
+import Archival from "./archival.mdx"
 
 // @ts-ignore
 const ArchivalIntegrityPage = (_props: PageProps) => (
@@ -50,13 +51,7 @@ const ArchivalIntegrityPage = (_props: PageProps) => (
 
                 <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={0} factor={1}>
                     <Inner>
-                        <Themed.h1>Preservation and Archival Integrity</Themed.h1>
-                        <Themed.p>
-                            Code Restoration: Oversee the technical work focused on restoring the original Decwar codebase (written in Fortran and assembly) and stabilizing the build process to ensure authentic binaries can run in historically faithful environments. This includes running surviving game versions using SIMH PDP-10 emulators to understand memory footprint and performance characteristics.
-                        </Themed.p>
-                        <Themed.p>
-                            Artifact Housing: Work closely with the Dolph Briscoe Center for American History to acquire and house physical artifacts, potentially including a physical magnetic tape of the original code, and showcase collected assets after the completion of collaborative projects.
-                        </Themed.p>
+                        <Archival/>
                         <Themed.p>
                             Go back to the <Link to="/">main page</Link>.
                         </Themed.p>

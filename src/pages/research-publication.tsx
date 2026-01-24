@@ -9,6 +9,7 @@ import Svg from "@lekoarts/gatsby-theme-cara/src/components/svg"
 import Seo from "@lekoarts/gatsby-theme-cara/src/components/seo"
 import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
+import Research from "./research.mdx"
 
 // @ts-ignore
 const ResearchPublicationPage = (_props: PageProps) => (
@@ -48,16 +49,7 @@ const ResearchPublicationPage = (_props: PageProps) => (
 
                 <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={0} factor={1}>
                     <Inner>
-                        <Themed.h1>Reasearch and Publication</Themed.h1>
-                        <Themed.p>
-                            Platform Studies: Generate scholarship that utilizes the game as a case study in Platform Studies, exploring how its design reflects the specific hardware constraints of the PDP-10 architecture, the TOPS-10 operating system environment, and the "temporal aesthetics of timesharing".
-                        </Themed.p>
-                        <Themed.p>
-                            Monograph Support: Officially support the development of the proposed monograph, Decwar: A Multiplayer Galaxy on a Single Machine, to be submitted for the MIT Press Platform Studies Series.
-                        </Themed.p>
-                        <Themed.p>
-                            Cultural History: Research how the UT Computation Center served as a "proto-online social world," documenting the embodied computing culture, social norms, and community standards that formed around Decwar.
-                        </Themed.p>
+                        <Research/>
                         <Themed.p>
                             Go back to the <Link to="/">main page</Link>.
                         </Themed.p>

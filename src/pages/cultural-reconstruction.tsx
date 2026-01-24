@@ -9,6 +9,7 @@ import Svg from "@lekoarts/gatsby-theme-cara/src/components/svg"
 import Seo from "@lekoarts/gatsby-theme-cara/src/components/seo"
 import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
+import Cultural from "./cultural.mdx"
 
 // @ts-ignore
 const CultureReconstructionPage = (_props: PageProps) => (
@@ -48,16 +49,7 @@ const CultureReconstructionPage = (_props: PageProps) => (
 
                 <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={0} factor={1}>
                     <Inner>
-                        <Themed.h1>Educational and Cultural Reconstruction</Themed.h1>
-                        <Themed.p>
-                            Experiential Learning: Utilize the preserved and implemented code in educational settings, such as coding classes and installations classes, to build modern implementations and comparative exhibits.
-                        </Themed.p>
-                        <Themed.p>
-                            Oral History Collection: Conduct and archive oral histories with Decwar's original authors, players, system operators, and lab administrators to document the "lived experience" and cultural significance of the game.
-                        </Themed.p>
-                        <Themed.p>
-                            Installation Development: Design and construct exhibits aimed at communicating the "secret history" of Decwar and recreating the authentic sensory environment of the 1970s machine room, potentially simulating the noise and the characteristic smell of "hot dust" heated on cathode ray tubes.
-                        </Themed.p>
+                        <Cultural/>
                         <Themed.p>
                             Go back to the <Link to="/">main page</Link>.
                         </Themed.p>

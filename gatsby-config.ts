@@ -61,6 +61,26 @@ const config: GatsbyConfig = {
         },
 
         {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `pages`,
+                path: `${__dirname}/src/pages`,
+            },
+        },
+
+        {
+            resolve: `gatsby-plugin-google-gtag`,
+            options: {
+                trackingIds: [
+                    "G-HLX6HBDBDQ", // Google Analytics / GA
+                ],
+            },
+            pluginConfig: {
+                head: true,
+            },
+        },
+
+        {
             resolve: `gatsby-plugin-sitemap`,
             options: {
                 output: `/`,
@@ -113,7 +133,7 @@ const config: GatsbyConfig = {
   }
 }`,
                         output: `rss.xml`,
-                        title: `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`,
+                        title: `DecwarOrg`,
                     },
                 ],
             },
